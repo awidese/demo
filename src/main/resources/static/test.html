@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-combined.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/layoutit.css">
+    <script src="bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/loginAndSignin.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <h3>
+                你好，欢迎光临.
+            </h3>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="alert">
+                <button class="close" type="button" data-dismiss="alert">×</button>
+                <h4>
+                    提示!
+                </h4> <strong>注意!</strong> 没有账号请先注册.
+            </div>
+            <div class="tabbable" id="tabs-931724">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#panel-634677" data-toggle="tab">登录</a>
+                    </li>
+                    <li>
+                        <a href="#panel-840949" data-toggle="tab">注册</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="panel-634677">
+                        <div class="form-horizontal">
+                            <div class="control-group">
+                                <label class="control-label">用户名</label>
+                                <div class="controls">
+                                    <input id="username1" name="username1" value="" type="text" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">密码</label>
+                                <div class="controls">
+                                    <input id="password1" name="password1" value="" type="password" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                    <label class="checkbox"><input type="checkbox" /> Remember me</label> <button class="btn" id="login">登录</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane" id="panel-840949">
+                        <div class="form-horizontal">
+                            <div class="control-group">
+                                <label class="control-label" for="username2">用户名</label>
+                                <div class="controls">
+                                    <input id="username2" type="text" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="inputPassword">昵称</label>
+                                <div class="controls">
+                                    <input id="inputPassword" type="password" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="password2">密码</label>
+                                <div class="controls">
+                                    <input id="password2" type="text" />
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="controls">
+                                     <button class="btn" id="signin" >注册</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
