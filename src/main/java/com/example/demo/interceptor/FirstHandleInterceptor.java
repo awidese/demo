@@ -10,8 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 public class FirstHandleInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-//        response.sendRedirect("/player/hi");
-        return false;
+        request.getSession();
+        if (request.getSession().getAttribute("login")!=null) {
+            return true;
+        }
+        else {
+            response.sendRedirect("/loginpage");
+            return false;
+        }
     }
 
     @Override

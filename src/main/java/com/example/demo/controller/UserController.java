@@ -36,6 +36,7 @@ public class UserController {
     @ResponseBody
     @RequestMapping(value = "/signin",method = RequestMethod.POST)
     public String signIn(@RequestBody JSONObject json){
+        logger.info("开始注册");
         if (json.isEmpty()){
             System.out.println("空的");
         }
@@ -62,8 +63,19 @@ public class UserController {
         return "200";
     }
 
+    @ResponseBody
+    @RequestMapping("/logout")
+    public String logout(HttpSession session){
+        session.removeAttribute("login");
+        if (session.getAttribute("login")==null){
+            return "200";
+        }
+        return "fail to logout";
+    }
+
     @RequestMapping("/loginpage")
     public String loginPage(){
+        logger.info("登录页面");
         return "loginAndSignin";
     }
 }

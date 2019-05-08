@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-combined.min.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/layoutit.css">
-    <script src="bootstrap/js/jquery-3.4.1.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="js/loginAndSignin.js"></script>
+    <title>欢迎</title>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap-combined.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/layoutit.css">
+    <script src="/static/bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.js"></script>
+    <script src="/static/js/loginAndSignin.js"></script>
 </head>
 <body>
 <div class="container-fluid">
@@ -42,13 +42,13 @@
                             <div class="control-group">
                                 <label class="control-label">用户名</label>
                                 <div class="controls">
-                                    <input id="username1" name="username1" value="123" type="text" />
+                                    <input id="username1" name="username1" value="douwenzhou" type="text" />
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">密码</label>
                                 <div class="controls">
-                                    <input id="password1" name="password1" value="123" type="password" />
+                                    <input id="password1" name="password1" value="123456789" type="password" />
                                 </div>
                             </div>
                             <div class="control-group">

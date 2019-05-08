@@ -4,8 +4,7 @@ $(document).ready(function(){
         var password=$("#password1").val();
         $.ajax({
             url:'/login',
-            async:true,
-            crossDomain:true,
+            async: false,
             type:"POST",
             data:{
                 inputUsername:username,
@@ -13,7 +12,10 @@ $(document).ready(function(){
             },
             dataType:"json",
             success:function (result) {
-                alert(result);
+                if (result=="200"){
+                    alert("登录成功");
+                    location.href='../index';
+                }
             },
             error:function () {
                 alert("连接服务器失败");
@@ -59,7 +61,7 @@ $(document).ready(function(){
         if (pass==true){
             $.ajax({
                 url:'/signin',
-                async:true,
+                async:false,
                 dataType:"json",
                 type:"POST",
                 contentType: "application/json",
@@ -70,7 +72,12 @@ $(document).ready(function(){
                     password2:password2
                 }),
                 success:function (result) {
-                  alert(result);
+                  if (result=="200"){
+                      alert("注册成功");
+                  }
+                  if (result=="102"){
+                      alert("用户名存在");
+                  }
                 },
                 error:function () {
                     alert("连接服务器失败");
